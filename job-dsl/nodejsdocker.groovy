@@ -16,7 +16,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('wardviaene/docker-nodejs-demo')
             tag('${GIT_REVISION,length=9}')
-	    dockerRegistryURL('192.168.99.75:5000')
+	    dockerRegistryURL('http://192.168.99.75:5000')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
